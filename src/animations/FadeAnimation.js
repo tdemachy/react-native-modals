@@ -23,7 +23,7 @@ export default class FadeAnimation extends Animation {
     Animated.timing(this.animate, {
       toValue: 1,
       duration: this.animationDuration,
-      useNativeDriver: this.useNativeDriver,
+      useNativeDriver: true,
     }).start(onFinished);
   }
 
@@ -31,7 +31,7 @@ export default class FadeAnimation extends Animation {
     Animated.timing(this.animate, {
       toValue: 0,
       duration: this.animationDuration,
-      useNativeDriver: this.useNativeDriver,
+      useNativeDriver: true,
     }).start(onFinished);
   }
 

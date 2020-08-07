@@ -18,7 +18,7 @@ export default class ScaleAnimation extends Animation {
     Animated.timing(this.animate, {
       toValue: 0,
       duration: 200,
-      useNativeDriver: this.useNativeDriver,
+      useNativeDriver: true,
     }).start(onFinished);
   }
 
