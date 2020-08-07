@@ -10,7 +10,7 @@ export default class ScaleAnimation extends Animation {
       velocity: 0,
       tension: 65,
       friction: 7,
-      useNativeDriver: this.useNativeDriver,
+      useNativeDriver: true,
     }).start(onFinished);
   }
 

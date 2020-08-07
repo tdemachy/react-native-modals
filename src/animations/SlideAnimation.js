@@ -36,7 +36,7 @@ export default class SlideAnimation extends Animation {
       velocity: 0,
       tension: 65,
       friction: 11,
-      useNativeDriver: this.useNativeDriver,
+      useNativeDriver: true,
       ...options,
     }).start(onFinished);
   }
