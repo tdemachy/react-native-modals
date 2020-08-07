@@ -12,7 +12,7 @@ export default class FadeAnimation extends Animation {
 
   constructor({
     initialValue = 0,
-    useNativeDriver = false,
+    useNativeDriver = true,
     animationDuration = 200,
   }: FadeAnimationConfig = {}) {
     super({ initialValue, useNativeDriver });

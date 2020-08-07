@@ -55,7 +55,7 @@
     "jest-enzyme": "^7.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-native": "^0.50.4",
+    "react-native": "^0.63.2",
     "react-native-mock-render": "^0.0.26",
     "rimraf": "^2.6.2"
   },
