@@ -145,11 +145,11 @@ export default class DraggableView extends Component<Props> {
     onPanResponderMove: (event, gestureState) => {
       const isVerticalSwipe = d => ['up', 'down'].includes(d);
       const isHorizontalSwipe = d => ['left', 'right'].includes(d);
-
+      
       const newSwipeDirection = this.getSwipeDirection(gestureState);
       const isSameDirection =
         isVerticalSwipe(this.currentSwipeDirection) === isVerticalSwipe(newSwipeDirection) ||
-        isHorizontalSwipe(this.currentSwipeDirection) === isHorizontalSwipe(newSwipeDirection);
+        isHorizontalSwipe(this.currentSwipeDirection) === isHorizontalSwipe(newSwipeDirection)
       // newDirection & currentSwipeDirection must be same direction
       if (newSwipeDirection && isSameDirection) {
         this.currentSwipeDirection = newSwipeDirection;
@@ -186,7 +186,6 @@ export default class DraggableView extends Component<Props> {
           velocity: 0,
           tension: 65,
           friction: 11,
-          useNativeDriver: true,
         }).start(() => {
           this.props.onSwipeOut(event);
         });
@@ -200,7 +199,6 @@ export default class DraggableView extends Component<Props> {
         velocity: 0,
         tension: 65,
         friction: 11,
-        useNativeDriver: true,
       }).start();
     },
   });
